@@ -6,53 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_envia_msg"
-        android:layout_width="212dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="314dp"
-        android:layout_marginEnd="64dp"
-        android:text="ENVIAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input_text_layout" />
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_fone_layout"
+        android:id="@+id/input_layout_phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        app:boxStrokeColor="@android:color/holo_green_dark"
+        app:hintTextColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_number_fone"
+            android:id="@+id/input_edit_text_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Fone" />
+            android:hint="Destination number"
+            android:inputType="number"
+            android:textColorHighlight="@color/black"
+            android:textColorLink="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Input_text_layout"
+        android:id="@+id/input_layout_msg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        app:boxStrokeColor="@android:color/holo_green_dark"
+        app:hintTextColor="@android:color/holo_green_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_fone_layout">
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_phone">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_text_msg"
+            android:id="@+id/input_edit_text_msg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mensagem" />
+            android:hint="Message" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="276dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="SEND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_msg"
+        app:rippleColor="@android:color/holo_green_dark" />
+
+    <ImageView
+        android:id="@+id/icon_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/input_layout_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <ImageView
+        android:id="@+id/icon_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/holo_green_dark"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintEnd_toStartOf="@+id/input_layout_msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_phone"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

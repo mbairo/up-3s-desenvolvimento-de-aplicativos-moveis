@@ -1,4 +1,4 @@
-package br.com.up;
+package br.com.up.whatsapp_message;
 
 import org.junit.Test;
 
