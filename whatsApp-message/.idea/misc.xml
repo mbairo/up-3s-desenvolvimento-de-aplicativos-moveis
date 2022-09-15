@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/edit_input_box.xml" value="0.365" />
         <entry key="app/src/main/res/drawable/icon_whatasapp.xml" value="0.366" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.366" />
       </map>
     </option>
   </component>

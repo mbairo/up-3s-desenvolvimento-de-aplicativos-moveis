@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">whatsApp-message</string>
+    <string name="destination_number">Destination Number</string>
+    <string name="message">Message</string>
 </resources>
