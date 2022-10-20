@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">sustentabilidadeemocionalemempresas</string>
+    <string name="splash_screen">Sustentabilidade Emocional\n Em Empresas</string>
+    <string name="escaneie">Escaneie o QR CODE da sua área</string>
+    <string name="sentimentos">Como você está se sentindo hoje?</string>
+    <string name="perguntadodia"><u>Pergunta do dia</u></string>
+    <string name="dicasSaude"><u>Dicas de saúde</u></string>
+
+    <string name="click_aqui"><u>Click aqui</u></string>
+    <string name="voltar"><u>Voltar</u></string>
+    <string name="saude_na_empresa"><u>Saúde na Empresa</u></string>
+
+
+
+    <!--  Textos provisórios  -->
+    <string name="duvidas_e_problemas"><u>Página de:\nDúvidas e Problemas com o App</u></string>
+    <string name="pergunta_do_dia"><u>Página de:\nPergunta do Dia</u></string>
+
+
+
+
+</resources>

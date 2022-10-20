@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NivelSentimento"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/imageView_duvidas"
+        android:layout_width="62dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="325dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duvida" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/sentimentos"
+        style="@style/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- View Container para os emojis -->
+    <View
+        android:id="@+id/view_rating"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!-- Muito Feliz   -->
+    <ImageView
+        android:id="@+id/img_muito_feliz_empty"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_rating"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/muito_feliz_empty" />
+    <ImageView
+        android:id="@+id/img_muito_feliz_full"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/view_rating"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/muito_feliz_full" />
+
+    <!--  Feliz  -->
+    <ImageView
+        android:id="@+id/img_feliz_empty"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_muito_feliz_full"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/feliz_empty" />
+    <ImageView
+        android:id="@+id/img_feliz_full"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/img_muito_feliz_full"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/feliz_full" />
+
+    <!-- Meio Chateado   -->
+    <ImageView
+        android:id="@+id/img_meio_chateado_empty"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_feliz_full"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/meio_chateado_empty" />
+    <ImageView
+        android:id="@+id/img_meio_chateado_full"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/img_feliz_full"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/meio_chateado_full" />
+
+    <!--  Triste  -->
+    <ImageView
+        android:id="@+id/img_triste_empty"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_meio_chateado_full"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/triste_empty"  />
+    <ImageView
+        android:id="@+id/img_triste_full"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/img_meio_chateado_full"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/triste_full" />
+
+    <!--  Muito Triste  -->
+    <ImageView
+        android:id="@+id/img_muito_triste_empty"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view_rating"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/muito_triste_empty" />
+
+    <ImageView
+        android:id="@+id/img_muito_triste_full"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/view_rating"
+        app:layout_constraintTop_toTopOf="@+id/view_rating"
+        app:srcCompat="@drawable/muito_triste_vermelho" />
+
+    <TextView
+        android:id="@+id/textView_pergunta_do_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/perguntadodia"
+        style="@style/link"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_dicas_de_saude"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_dicas_de_saude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/dicasSaude"
+        style="@style/link"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_pergunta_do_dia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+<!--Color-->
+
+    <!-- Verry sad p.b <a href="https://www.flaticon.com/free-icons/sad" title="sad icons">Sad icons created by Freepik - Flaticon</a>-->
+
+    <!-- Sad p.b <a href="https://www.flaticon.com/free-icons/emoji" title="emoji icons">Emoji icons created by justicon - Flaticon</a> -->
+    <!-- Sad Colorido <a href="https://www.flaticon.com/free-icons/face" title="face icons">Face icons created by justicon - Flaticon</a>  -->
+
+    <!-- Hun p.b <a href="https://www.flaticon.com/free-icons/sad" title="sad icons">Sad icons created by Freepik - Flaticon</a>    -->
+    <!-- Hun colorido <a href="https://www.flaticon.com/free-icons/sad" title="sad icons">Sad icons created by Freepik - Flaticon</a>    -->
+
+    <!-- Very happy <a href="https://www.flaticon.com/free-icons/emoji" title="emoji icons">Emoji icons created by Freepik - Flaticon</a>    -->
+
+    <!-- Happy <a href="https://www.flaticon.com/free-icons/smile" title="smile icons">Smile icons created by Vitaly Gorbachev - Flaticon</a>    -->
+
+    <!---->
+
+    <!-- Interrogação <a href="https://www.flaticon.com/free-icons/chat-box" title="chat box icons">Chat box icons created by Dixit Lakhani_02 - Flaticon</a>-->
