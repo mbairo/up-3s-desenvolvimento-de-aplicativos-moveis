@@ -29,20 +29,29 @@ public class DicasDeSaude extends AppCompatActivity {
         btn_dicas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToPage();
+                // goToPage();
+                Uri webpage = Uri.parse("https://vidasaudavel.einstein.br/como-cuidar-da-saude-mental/");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
             }
         });
 
         btn_beneficios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToPage();
+                // goToPage();
+                Uri webpage = Uri.parse("https://www.infojobs.com.br/blog/lista_completa_dos_beneficios_mais_queridinhos_dos_funcionarios__14668.aspx?t=2");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
             }
         });
         btn_liks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToPage();
+                // goToPage();
+                Uri webpage = Uri.parse("https://www.planodesaude.net/");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
             }
         });
     }
@@ -54,9 +63,9 @@ public class DicasDeSaude extends AppCompatActivity {
         btn_liks = findViewById(R.id.btn_links);
     }
 
-    private void goToPage() {
-        Uri webpage = Uri.parse("https://vidasaudavel.einstein.br/como-cuidar-da-saude-mental/");
-        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
-        startActivity(webIntent);
-    }
+//    private void goToPage() {
+//        Uri webpage = Uri.parse("https://vidasaudavel.einstein.br/como-cuidar-da-saude-mental/");
+//        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+//        startActivity(webIntent);
+//    }
 }

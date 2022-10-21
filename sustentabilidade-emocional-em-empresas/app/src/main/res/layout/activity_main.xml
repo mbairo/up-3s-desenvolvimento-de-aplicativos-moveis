@@ -18,22 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Erro: Não aparece o icon qrcode   -->
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="258dp"-->
-<!--        android:layout_height="164dp"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:visibility="visible"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
-<!--        tools:srcCompat="@drawable/ic_qr_code" />-->
-
-
+    
     <ImageView
         android:id="@+id/imageView_duvidas"
         android:layout_width="57dp"

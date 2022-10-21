@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DuvidasEProblemas">
+    tools:context=".DuvidasEProblemas"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textView_title_saude_na_empresa"
@@ -17,27 +18,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="256dp"
-        android:layout_height="193dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginEnd="145dp"
-        android:layout_marginBottom="212dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/ic_em_construcao" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="297dp"
         android:layout_marginBottom="24dp"
+        android:textColor="@color/black"
         android:text="@string/voltar"
-        android:backgroundTint="@color/ForestGreen"
+        android:background="@drawable/btn_arredondado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

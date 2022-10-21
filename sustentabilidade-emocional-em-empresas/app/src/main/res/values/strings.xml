@@ -8,12 +8,12 @@
 
     <string name="click_aqui"><u>Click aqui</u></string>
     <string name="voltar"><u>Voltar</u></string>
-    <string name="saude_na_empresa"><u>Saúde na Empresa</u></string>
+    <string name="saude_na_empresa">Saúde na Empresa</string>
 
 
 
     <!--  Textos provisórios  -->
-    <string name="duvidas_e_problemas"><u>Página de:\nDúvidas e Problemas com o App</u></string>
+    <string name="duvidas_e_problemas">Página de:\nDúvidas e Problemas com o App</string>
     <string name="pergunta_do_dia"><u>Página de:\nPergunta do Dia</u></string>
 
 
